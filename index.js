@@ -1,8 +1,7 @@
-$(document).ready(main);
+const mobileMenuToggle = document.querySelector(".menu-bar")
+const mobileDropDown = document.querySelector(".bar-menu")
 
-var contador = 1 ;
-function main(){
-    $('.menu-bar').click(function(){
-        $('.bar-menu').toggle();
-    });
-};
+mobileMenuToggle.addEventListener("click", () => {
+    mobileDropDown.classList.toggle("hidden")
+})
+
