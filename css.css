@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-width: 300px;
+  font-family: sans-serif;
+  background: #f2f2f2;
+  line-height: 27px;
+}
+
+#navbar {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  display: flex;
+}
+@media(max-width:720px){
+  #navbar{
+    display: none;
+
+}}
+#navbar a {
+  padding: 10px 30px;
+  display: flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: solid 2px;
+  border-color: rgb(0 0 0 / 36%) rgb(0 0 0 / 36%) rgb(0 0 0 / 36%) transparent;
+  height: 35px;
+  align-items: center;
+  color: #000000b5;
+}
+#navbar ul {
+  height: 100%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+/*menu de dispositivos*/
+@media(min-width:720px){
+  .header-bar{
+    display: none;
+    }}
+
+    .header-bar{
+  width: 100%;
+}
+.header-bar nav{
+  width: 90%;
+  max-width: 1000px;
+  margin:  20px auto;
+  background: whitesmoke;
+}
+.menu-bar{
+  display: none;
+
+}
+.header-bar nav ul{
+  overflow: hidden;
+  list-style: none;
+}
+.header-bar nav ul li{
+  float: left;
+}
+.header-bar nav ul li a{
+  color: black;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+}
+.header-bar nav ul li a:hover{
+  background: #bf0000;
+}
+@media (max-width:720px){
+  .header-bar nav{
+    width: 80%;
+    height: 80%;
+    margin: 0;
+    position: fixed;
+    margin-top: 50px;
+    overflow: auto;
+  }
+  .header-bar nav ul li{
+    display: block;
+    float: none;
+    border-bottom: solid 1px red;
+  }
+  .menu-bar{
+    display: block;
+    width: 100%;
+    
+  }
+  .menu-bar .bt-menu{
+   
+    display: flex;
+    padding: 20px;
+    background: #f2f2f2;
+    color: black;
+    border-bottom: solid 2px red;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 8px;
+    position: fixed;
+    width: 100%;
+  
+  }
+  
+}
+
+
+
+
+
+
+
+#main-doc {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  margin-left: 339px;
+  margin-bottom: 100px;
+}
+@media (max-width:900px){
+    #main-doc{
+        width: 50vw
+    }}
+    @media (max-width:560px){
+        #main-doc{
+      width: 35vw;
+    }}
+    @media(max-width:720px){
+      #main-doc{
+        margin-left: 0px;
+        margin-bottom: 0px;
+        margin: auto;
+        width: 70vw;
+      
+    }}
+section header {
+  font-size: 1.8em;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+#Home_menu {
+  position: fixed;
+  background: whitesmoke;
+  border: solid 2px;
+  border-color: transparent transparent #bf0000 transparent;
+  width: 300px;
+  height: 90px;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
